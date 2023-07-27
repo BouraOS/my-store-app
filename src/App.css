@@ -35,6 +35,23 @@ header a:hover {
     color: #161616;
     text-decoration: underline;
 }
+
+main {
+    margin-bottom: 84px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #161616;
+    color: #AAAAAA;
+    height: 74px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
 .link-button {
     display: inline-block;
     text-align: center;
@@ -144,7 +161,7 @@ header a:hover {
 }
 .prod-list-container .category-nav span{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 10px !important;
     background-color: #4C3D3D;
     cursor: pointer;
@@ -172,8 +189,8 @@ header a:hover {
 
 .prod-type {
     height: 34px;
-    padding: 6px 26px;
-    font-style: normal;
+    font-size: 14px;
+    padding: 6px 10px;
     font-weight: 500;
     border: none;
     border-radius: 5px;
@@ -236,10 +253,6 @@ i[class*='prod-type-'] {
 .prod-detail-container .back-button {
     color: black;
     text-decoration: none;
-}
-
-.prod-detail-container .back-button:visited {
-    
 }
 
 .prod-detail-container .back-button span {

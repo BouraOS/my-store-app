@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7D4;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+}
+
+header .site-logo {
+    color: black;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+header a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+.link-button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: .75rem 1.375rem;
+    color: initial;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+.link-button:hover {
+    transform: translate(1px, 1px);
+}
+
+/*** HOME PAGE ***/
+.home-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./assets/home-page-img.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* min-height: 350px; */
+    height: 450px;
+    color: white;
+    padding: 45px 23px;
+}
+.home-container h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.home-container a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF8C38;
+    border: none;
+    width: 100%;
+    margin-top: 27px;
+    padding-block: .75rem;
+    color: #FFF7D4;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+
+.home-container a:hover {
+    transform: translate(1px, 1px);
+}
+
+/*** ABOUT PAGE ***/
+.about-hero-image {
+    max-width: 100%;
+}
+
+.about-page-content {
+    margin-top: 15px;
+    padding-inline: 23px;
+    color: #4C3D3D;
+    margin-bottom: 55px;
+}
+
+.about-page-content h1 {
+    line-height: 38px;
+}
+
+.about-page-content p {
+    line-height: 22px;
+}
+
+.about-page-cta {
+    background-color: #FFCC8D;
+    color: #161616;
+    padding-inline: 32px;
+    padding-bottom: 32px;
+    margin-inline: 27px;
+    border-radius: 5px;
+}
+
+.about-page-cta h2 {
+    margin: 0;
+    padding-block: 37px;
+}
+
+.about-page-cta .link-button {
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
+}
+
+/*** PRODUCTS PAGES ***/
+.prod-list-container {
+    padding-inline: 23px
+}
+.prod-list-container .category-nav {
+    margin-top: 30px;
+}
+.prod-list-container .category-nav span{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 10px !important;
+    background-color: #4C3D3D;
+    cursor: pointer;
+}
+
+.prod-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+    margin-top: 30px;
+}
+
+.prod-tile a {
+    color: #161616;
+    text-decoration: none;    
+}
+
+.prod-tile img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+.prod-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.prod-type:hover {
+    color: #FFEAD0;
+}
+
+.prod-type:focus {
+    outline: none;
+}
+
+.prod-type.selected {
+    color: #FFEAD0;
+}
+
+.prod-type.mens-watches:hover, .prod-type.mens-watches.selected {
+    background-color: #E17654;
+}
+
+.prod-type.laptops:hover, .prod-type.laptops.selected {
+    background-color: #115E59;
+}
+
+.prod-type.sunglasses:hover, .prod-type.sunglasses.selected {
+    background-color: #161616;
+}
+
+.prod-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
+
+i[class*='prod-type-'] {
+    padding: 7px 14px;
+}
+
+/*** PRODUCT DETAIL PAGES ***/
+.prod-detail-container {
+    padding: 10px 27px 15px;
+}
+ .category-nav button{
+    color: #115E59;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.prod-detail-container .back-button {
+    color: black;
+    text-decoration: none;
+}
+
+.prod-detail-container .back-button:visited {
+    
+}
+
+.prod-detail-container .back-button span {
+    text-decoration: underline;
+}
+
+.prod-detail {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.prod-detail img {
+    border-radius: 5px;
+    margin: 30px 0px 10px;
+}
+
+.prod-detail h2 {
+    font-size: 2rem;
+    margin-block: 15px;
+}
+
+.prod-detail > i {
+    align-self: flex-start;
+}
+
+.prod-detail .prod-price {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #3D8361;
+}
+
+.prod-detail .prod-price span {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.prod-detail .prod-brand {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.prod-detail .prod-brand span{
+    color: #4C3D3D;
+    font-size: 1.2rem;
+    margin-left: 7px;
+}
+.prod-detail .link-button {
+    background-color: #FF8C38;
+    color: white;
+    font-size: 1.125rem;
+}
